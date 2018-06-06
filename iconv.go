@@ -34,6 +34,9 @@ type Iconv struct {
 	Handle C.iconv_t
 }
 
+func List() {
+}
+
 // Open returns a conversion descriptor cd, cd contains a conversion state and can not be used in multiple threads simultaneously.
 func Open(tocode string, fromcode string) (cd Iconv, err error) {
 
